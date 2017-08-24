@@ -1,0 +1,43 @@
+
+
+	PrivacyVC
+		***Profile Details Seen By
+			- in need to save to core data?
+				・_User
+					+ (NSString *)privacy {
+
+--------------------------------------------------------
+	✔︎ Syncing Contacts
+		**Vidao Search
+			ContactsVC2.m
+				- (void)subscribeForNoifications
+				- (void)updateContact:(NSNotification *)notification {
+
+			⭐︎VidaoTabBarVC.m
+				- (void)setPhoneContacts {
+
+--------------------------------------------------------
+	✔︎ How to send contacnt
+		・VidaoTabBarVC.m
+			- (void)setPhoneContacts {
+				・AddRemoveContactsVM.swift
+					func setPhoneContacts(completion: @escaping (_ contacts:[Any]?) -> ()) {
+						getNewPhoneContacts()
+
+--------------------------------------------------------
+	✔︎ How to delete all contacnt
+		・AddRemoveContactsVM.swift
+			func deletePhoneContacts(completion: @escaping (_ success: Bool) -> ()) {
+				・ContactsSocketsManager.m
+					
+					
+
+--------------------------------------------------------
+
+		**Remove all contact
+			[keywords search]: remove contact
+				・ContactsDataSource.m
+					- (void)removeContact:(Contact *)contactToRemove		
+
+				・ContactsVC2.m ->
+					- (void)removeContactFromDataSrouce:(Contact *)contact {
